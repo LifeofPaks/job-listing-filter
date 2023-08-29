@@ -2,10 +2,13 @@
 @import '../../styles/Variables.scss';
 
 .home{
-    margin-top: 10%;
-    background: $Light-Grayish-Cyan-Background;
     min-height: 100vh;
     padding-block: 5rem;
     display: flex;
     justify-content: center;
+    position: relative;
+
+    @include Mobile{
+        padding-top: 8rem;
+    }
 }

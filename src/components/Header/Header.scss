@@ -1,0 +1,67 @@
+@import "../../styles/Responsive.scss";
+@import "../../styles/Variables.scss";
+
+.Header{
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 10px 10px $Desaturated-Dark-Cyan-shadow;
+    width: 70%;
+    border-radius: 5px;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 2rem;
+
+    @include Mobile{
+        width: 90%;
+        padding: 1.2rem 1rem;
+    }
+    
+
+    .filteredTitle {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+
+        .keyword{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            p{
+                background: $Light-Grayish-Cyan-Background;
+                padding:.4rem .6rem ;
+                transition: .3s;
+                border-radius: 3px;
+                color: $Desaturated-Dark-Cyan;
+               
+            }
+          
+
+            button{
+                background: $Desaturated-Dark-Cyan;
+                padding:.2rem .5rem ;
+                border-radius: 0 3px 3px 0;
+                padding-top: 0.4rem;
+                transition: .3s;
+
+                &:hover{
+                    background: $Very-Dark-Grayish-Cyan;
+                }
+            }
+      
+        }
+    }
+
+    button{
+        color: $Dark-Grayish-Cyan;
+        font-weight: bold;
+        transition: .3s;
+
+        &:hover{
+            color: $Desaturated-Dark-Cyan;
+            text-decoration: underline;
+        }
+    }
+}

@@ -10,11 +10,22 @@
 
 body{
   font-family: 'League Spartan', sans-serif;
-  background: $Desaturated-Dark-Cyan;
-  background-image: url(./images//bg-header-desktop.svg);
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background: $Light-Grayish-Cyan-Background;
+
 
   &::-webkit-scrollbar{
     display: none;
   }
+}
+
+input, button{
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+button{
+  cursor: pointer;
 }

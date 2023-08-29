@@ -1,0 +1,15 @@
+@import "../../styles/Responsive.scss";
+@import "../../styles/Variables.scss";
+
+.top{
+    background: $Desaturated-Dark-Cyan;
+    background-image: url(../../images//bg-header-desktop.svg);
+    background-repeat: no-repeat;
+    height: 19vh;
+  
+  
+    @include Mobile{
+        background-image: url(../../images//bg-header-mobile.svg);
+        height: 17vh;
+    }
+}

@@ -1,0 +1,126 @@
+@import "../../styles/Responsive.scss";
+@import "../../styles/Variables.scss";
+
+
+.job {
+    background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 10px $Desaturated-Dark-Cyan-shadow;
+
+  @include Mobile{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: unset;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+  }
+
+  &.featuredList{
+      border-left: 5px solid $Desaturated-Dark-Cyan;
+  }
+
+  .left{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    
+      @include Mobile{
+        padding-bottom: 1rem;
+        border-bottom: .5px solid $Dark-Grayish-Cyan;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        padding-top: 2.5rem;
+      }
+
+      img{
+         @include Mobile{
+            width: 50px;
+            position: absolute;
+            top: -25px;
+         }
+      }
+
+      .info{
+          display: flex;
+          flex-direction: column;
+          gap: .8rem;
+          .header{
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+
+              .title{
+                  color: $Desaturated-Dark-Cyan;
+              }
+
+              .new, .featured{
+                  color: #fff;
+                  padding:0.3rem .4rem;
+                  background: $Desaturated-Dark-Cyan;
+                  border-radius: 1rem;
+                  text-transform: uppercase;
+                  font-size: 12px;
+                  padding-top: 0.4rem;
+              }
+
+              .featured{
+                   background: $Very-Dark-Grayish-Cyan;
+              }
+          }
+
+          .stack{
+              color: $Very-Dark-Grayish-Cyan;
+              font-weight: bold;
+              transition: .3s;
+              cursor: pointer;
+
+              &:hover{
+                  color: $Desaturated-Dark-Cyan;
+              }
+          }
+      }
+
+      .details{
+          display: flex;
+          align-items: center;
+          gap: .5rem;
+      }
+
+      .details{
+          color: $Dark-Grayish-Cyan;
+      }
+  }
+  .right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: $Desaturated-Dark-Cyan;
+    font-weight: bold;
+
+    @include Mobile{
+        flex-wrap: wrap;
+        padding-bottom: 1.5rem;
+      }
+
+  
+    p{
+        background: $Light-Grayish-Cyan-Background;
+        padding:.4rem .6rem ;
+        cursor: pointer;
+        transition: .3s;
+        border-radius: 3px;
+  
+        &:hover{
+            background: $Desaturated-Dark-Cyan;
+            color: #fff;
+        }
+    }
+  }
+}
+
