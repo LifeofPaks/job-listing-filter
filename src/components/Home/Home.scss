@@ -1,0 +1,11 @@
+@import '../../styles/Responsive.scss';
+@import '../../styles/Variables.scss';
+
+.home{
+    margin-top: 10%;
+    background: $Light-Grayish-Cyan-Background;
+    min-height: 100vh;
+    padding-block: 5rem;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,98 @@
+@import "../../styles/Responsive.scss";
+@import "../../styles/Variables.scss";
+
+.lists {
+    width: 100%;
+    margin-inline: 15%;
+    
+    .list {
+      background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 10px $Desaturated-Dark-Cyan-shadow;
+    &.featuredList{
+        border-left: 5px solid $Desaturated-Dark-Cyan;
+    }
+
+    .left{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+            .header{
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+
+                .title{
+                    color: $Desaturated-Dark-Cyan;
+                }
+
+                .new, .featured{
+                    color: #fff;
+                    padding:0.3rem .4rem;
+                    background: $Desaturated-Dark-Cyan;
+                    border-radius: 1rem;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    padding-top: 0.4rem;
+                }
+
+                .featured{
+                     background: $Very-Dark-Grayish-Cyan;
+                }
+            }
+
+            .stack{
+                color: $Very-Dark-Grayish-Cyan;
+                font-weight: bold;
+                transition: .3s;
+                cursor: pointer;
+
+                &:hover{
+                    color: $Desaturated-Dark-Cyan;
+                }
+            }
+        }
+
+        .details{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        .details{
+            color: $Dark-Grayish-Cyan;
+        }
+    }
+  }
+
+  .right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: $Desaturated-Dark-Cyan;
+    font-weight: bold;
+
+    p{
+        background: $Light-Grayish-Cyan-Background;
+        padding:.4rem .6rem ;
+        cursor: pointer;
+        transition: .3s;
+        border-radius: 3px;
+
+        &:hover{
+            background: $Desaturated-Dark-Cyan;
+            color: #fff;
+        }
+    }
+  }
+}
