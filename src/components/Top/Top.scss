@@ -11,5 +11,6 @@
     @include Mobile{
         background-image: url(../../images//bg-header-mobile.svg);
         height: 17vh;
+        background-size: cover;
     }
 }
